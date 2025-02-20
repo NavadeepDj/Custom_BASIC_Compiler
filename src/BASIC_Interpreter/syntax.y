@@ -27,9 +27,12 @@ statement:
         printf("Stored: %c = %d\n", $2, $4);
     }
     | PRINT IDENTIFIER  { 
+    if (symbolTable[$2 - 'A'] == 0) 
+        printf("ERROR: %c is not assigned\n", $2);
+    else 
         printf("%c = %d\n", $2, symbolTable[$2 - 'A']);  
-    }
-    ;
+}
+
 
 %%
 
