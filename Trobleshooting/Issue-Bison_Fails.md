@@ -1,7 +1,12 @@
 # Resolving "C:\\Program: cannot open Files'" Error When Running Bison on Windows
 
 ## Issue Description
-When attempting to run **Bison** from GnuWin32 on Windows, users may encounter an error similar to the following:
+When attempting to run **Bison** from GnuWin32 on Windows, users may encounter an error.
+For ex: When you run bison command after lex for building interpreter or compiler:
+```
+bison -d syntax.y
+```
+Users may encounter an error similar to the following:
 
 ```
 C:\Program: cannot open Files': No such file or directory
